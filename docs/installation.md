@@ -20,3 +20,10 @@
 4. Attach the Debian ISO to the virtual optical drive.
 5. Start the VM and follow the Debian installer.
 6. Create a user account (server) and set a hostname (server1).
+
+## Linked Clone (final step)
+after settting up server1, right click on it from the Virtualbox Manager `Machines` page and select `Clone`.
+
+Select `Linked Clone`, and set the rest as default. Then update the `hostname` so it doesn't stay as `server1`
+
+    sudo hostnamectl set-hostname server2
