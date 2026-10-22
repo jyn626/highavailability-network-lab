@@ -76,7 +76,7 @@ Test connectivity to verify both servers :
     ping -c 172.16.3.11
 
 ## Set up Port Forwading
-Set a Port Forwading rule on each VMs, it's essential to SSH to our VBox server from our Host OS.
+Set a Port Forwading rule on each VMs, this rule is important for our Host OS to have access on our server's SSH.
 
 Set Rule:
 -   Host Port: *(view prerequisites)*
