@@ -37,7 +37,11 @@ Set static IP for enp0s8 (Adapter 2):
         address 172.16.3.11
         netmask 255.255.255.0
 
-Do the same for the other server, but assign a different static IP address.
+Do the same for the other server, but assign a different static IP address (e.g, 172.16.3.12).
+
+Restart the system's network to apply the changes
+
+    sudo systemctl restart networking
 
 ## Inspect Network Configuration
 
@@ -47,8 +51,14 @@ Display network interfaces and their IP addresses to verify:
 
 ## Connectivity Tests
 
-Test connectivity to an external IP address:
+Test connectivity to verify both servers :
 
-    ping -c 4 1.1.1.1
+*from server1, ping server2*
+
+    ping -c 172.16.3.12
+
+*from server2, ping server1*
+
+    ping -c 172.16.3.11
 
 ## Notes
