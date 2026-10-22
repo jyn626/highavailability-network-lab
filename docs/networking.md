@@ -1,5 +1,19 @@
 # Debian Networking Configuration
 
+## Prerequisites
+
+*server1*
+| Setting | IP address/Port |
+|---|---|
+| Internal Network IP | 172.16.3.11 |
+| Host Port | 2031 |
+
+*server2*
+| Setting | IP address/Port |
+|---|---|
+| Internal Network IP | 172.16.3.12 |
+| Host Port | 2032 |
+
 ## Network Topology
 
 Both Debian VMs (server1, server2) use VirtualBox NAT networking for outbound connectivity.
@@ -60,5 +74,16 @@ Test connectivity to verify both servers :
 *from server2, ping server1*
 
     ping -c 172.16.3.11
+
+## Set up Port Forwading
+Set a Port Forwading rule on each VMs, it's essential to SSH to our VBox server from our Host OS.
+
+Set Rule:
+-   Host Port: *(view prerequisites)*
+-   Guest Port: 22
+-   *leave other options as empty, it'll default to localhost...*
+
+# Test SSH
+
 
 ## Notes
