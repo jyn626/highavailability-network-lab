@@ -1,10 +1,10 @@
-# High Availability Linux Infrastructure: Midterm Lab
+# Simple High Availability Linux Infrastructure
 
 Two Debian Minimal (CLI-only) servers in VirtualBox, connected over an internal network, reachable by SSH from the Windows host.
 
 > **Status:** Midterm scope. Database replication and failover are planned for the final term (see bottom).
 
-## Midterm Deliverables
+## Midterm Tasks
 
 - [ ] Two Debian Minimal CLI VMs in VirtualBox (Server 2 is a Linked Clone of Server 1)
 - [ ] Adapter 1 = NAT (Internet), Adapter 2 = Internal Network (server-to-server)
