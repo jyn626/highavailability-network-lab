@@ -28,7 +28,7 @@ A hands-on learning project: two Debian Minimal (CLI-only) servers in VirtualBox
  | .11/24    |      "intnet1"  | .12/24    |
  +-----------+                 +-----------+
         \                           /
-         '--- VIP 172.16.3.10 ----'
+         '--- VIP 172.16.3.100 ----'
           (lives on whichever server is MASTER)
 
  Windows :2031 --(NAT port forward)--> Server 1 :22
@@ -45,7 +45,7 @@ A hands-on learning project: two Debian Minimal (CLI-only) servers in VirtualBox
 | Internal static IP | `172.16.3.11/24` | `172.16.3.12/24` |
 | SSH from Windows | `127.0.0.1:2031` | `127.0.0.1:2032` |
 | Keepalived role | MASTER (priority 150) | BACKUP (priority 100) |
-| Virtual IP | `172.16.3.10/24` (shared) | `172.16.3.10/24` (shared) |
+| Virtual IP | `172.16.3.100/24` (shared) | `172.16.3.100/24` (shared) |
 
 ## Repository Layout
 
