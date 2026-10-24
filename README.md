@@ -38,15 +38,15 @@ Two Debian Minimal (CLI-only) servers in VirtualBox, connected over an internal 
 
 ## Addressing Table
 
-Replace with your assigned group values.
+Assigned values.
 
 | Item | Server 1 | Server 2 |
 |---|---|---|
 | Hostname | `server1` | `server2` |
 | Adapter 1 (enp0s3) | NAT, DHCP | NAT, DHCP |
 | Adapter 2 (enp0s8) | Internal Network `intnet1` | Internal Network `intnet1` |
-| Internal static IP | `172.16.1.11/24` | `172.16.1.12/24` |
-| SSH from Windows | `127.0.0.1:2011` | `127.0.0.1:2012` |
+| Internal static IP | `172.16.3.11/24` | `172.16.3.12/24` |
+| SSH from Windows | `127.0.0.1:2031` | `127.0.0.1:2032` |
 
 ## Repository Layout
 
