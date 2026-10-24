@@ -1,0 +1,17 @@
+# /etc/network/interfaces  (Server 2)
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+# Adapter 1: NAT (Internet)
+allow-hotplug enp0s3
+iface enp0s3 inet dhcp
+
+# Adapter 2: Internal Network (server-to-server)
+auto enp0s8
+iface enp0s8 inet static
+    address 172.16.3.12
+    netmask 255.255.255.0
+    # no gateway here
+    # do not add the VIP here; Keepalived manages it
