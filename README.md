@@ -1,4 +1,4 @@
-# High Availability Linux Lab
+# Simple High Availability Linux Infrastructure
 
 A hands-on learning project: two Debian Minimal (CLI-only) servers in VirtualBox, linked by a private network, reachable over SSH from Windows, with Keepalived providing a floating Virtual IP (VIP) for failover.
 
